@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { CarCardComponents } from '@/types';
 import CustomButton from './CustomButton';
 import { calculateCarRent } from '@/utils';
+import CarDetails from './CarDetails';
 
 const CarCard = ({ car }: CarCardComponents) => {
   const { city_mpg, year, make, model, transmission, drive } = car;
@@ -64,7 +65,7 @@ const CarCard = ({ car }: CarCardComponents) => {
           />
         </div>
       </div>
-      {/* <CarDetails/> */}
+      <CarDetails />
     </div>
   );
 };
